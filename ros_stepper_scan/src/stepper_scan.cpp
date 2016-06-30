@@ -39,7 +39,7 @@ int main(int argc, char** argv)
   kinect.reset(new Kinect2Interface(nh));
 
   if (!nh.getParam("ros_stepper_scan/increment_degrees", g_increment_degrees))
-    g_increment_degrees = 10.0;  // Default value
+    g_increment_degrees = 15.0;  // Default value
   if (!nh.getParam("ros_stepper_scan/snaps_per_increment", g_n_snaps))
     g_n_snaps = 1;  // Default value
 
